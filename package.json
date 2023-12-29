@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "./cmd.sh TemplateA && next dev",
+    "dev:tplA": "./cmd.sh TemplateA && next dev",
+    "dev:tplB": "./cmd.sh TemplateB && next dev",
+    "build": "./cmd.sh TemplateA && next build",
+    "build:tplA": "./cmd.sh TemplateA && next build",
+    "build:tplB": "./cmd.sh TemplateB && next build",
     "start": "next start",
     "lint": "next lint"
   },
